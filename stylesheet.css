@@ -1,3 +1,36 @@
 body {
-    background-color: red;
+    margin: 0px;
+    padding:  0px;
+    display: flex;
+    flex-direction: row;
 }
+
+#rightSideContainer {
+    background-color: red;
+    width: 70vw;
+    height: 100vh;
+}
+
+#leftSideContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 30vw;
+    height: 100vh;
+}
+
+#artistCredit {
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+/* 
+Use the body as flex-display container.
+Place 2 containers, left and right side.
+Inside left container, we want 2 more containers for the logo and the credit
+Right side will have to be a flex-display container, we'll have multiple
+children of this parent. 
+1 Div for the text.
+1 Table for the signup form
+1 Div for the create account and login section*/
