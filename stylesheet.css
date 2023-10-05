@@ -68,10 +68,10 @@ body {
 
 .transparentBackground {
     position: absolute;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.6);
     width: 40%;
     height: 200px;
-    top: 210px;
+    top: 290px;
     align-self: center;
     /* box-shadow: 5px -10px 21px 0px #FFFFFF, 
     -10px 10px 21px -1px #FFFFFF; */
