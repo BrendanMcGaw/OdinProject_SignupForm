@@ -3,6 +3,14 @@ a {
     color: white;
 }
 
+@font-face {
+    font-family: 'kool_beansregular';
+    src: url('koolbean.woff2') format('woff2'),
+         url('koolbean.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body {
     margin: 0px;
@@ -45,7 +53,9 @@ body {
     right: 6%;
     color: white;
     font-size: 42px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'kool_beansregular', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .imageText {
