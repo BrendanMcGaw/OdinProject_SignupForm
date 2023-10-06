@@ -8,13 +8,13 @@
 </head>
 <body>
     <div id="leftSideContainer"></div>
-        <img id="backgroundImage" src="gaddafi-rusli-2ueUnL4CkV8-unsplash.jpg">
+        <img id="backgroundImage" src="silas-baisch-LDiZP1yLQxg-unsplash.jpg">
         <div class="transparentBackground"">
             <img id="logo"src="make-waves-logo-56D6056F5F-seeklogo.com.png" alt="">
             <p class="logoText">Sign up for your <br> next holiday!</p>
         </div>
         <div class="imageText">
-            Photo by <a href="https://unsplash.com/@gaddafirusli?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Gaddafi Rusli</a> on <a href="https://unsplash.com/photos/2ueUnL4CkV8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            Photo by <a style="color: white;" href="https://unsplash.com/@silasbaisch?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Silas Baisch</a> on <a style="color: white;" href="https://unsplash.com/photos/LDiZP1yLQxg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
         </div>
 
     <div id="rightSideContainer">
@@ -27,24 +27,60 @@
             You <span style = "font-style:italic">know</span> you want to.
         </div>
 
+        <!-- Our table container -->
         <div id="tableContainer">
             <table>
-                <th>Let's do this!</th>
-                <tr>
-                    <td>Hello</td>
-                    <td>With a tiny bit more</td>
-                </tr>
-                <tr>
-                    <td>Hiya</td>
-                    <td>and then more!</td>
-                </tr>
-                <tr>
-                    <td>Wussap</td>
-                    <td>Theres  morre!</td>
-                </tr>
+                <form>
+                    <th>Let's do this!</th>
+                    <tr>
+                        <!-- each column has its own class so that the name can sit ontop of the input  -->
+                        <td class="columnOne">
+                            <label for="firstName">
+                                FIRST NAME
+                            </label>
+                            <input type="text" id="firstName" />
+                        </td>
+                        <td class="columnTwo">
+                            <label for="lastName">
+                                LAST NAME
+                            </label>
+                            <input type="text" id="lastName" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="columnOne">
+                            <label for="email">
+                                EMAIL
+                            </label>
+                            <input type="text" id="email" />
+                        </td>
+                        <td class="columnTwo">
+                            <label for="phoneNumber">
+                                PHONE NUMBER
+                            </label>
+                            <input type="number" id="phoneNumber" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="columnOne">
+                            <label for="password">
+                                PASSWORD
+                            </label>
+                            <input type="text" id="password" />
+                        </td>
+                        <td class="columnTwo">
+                            <label for="confirmPassword">
+                                CONFIRM PASSWORD
+                            </label>
+                            <input type="text" id="confirmPassword" />
+                        </td>
+                    </tr>
+                </form>
             </table>
         </div>
-        
+    
+    <button>Create Account</button>
+    <p id="loginText">Already have an account? <a href="http://">Log In</a></p>
     </div>
 
     

@@ -1,8 +1,11 @@
 
+/* Changes the color of the hyperlink text. */
 a {
-    color: white;
+    color: #258E91;
+    text-decoration: none;
 }
 
+/* Cool font I found online for the logo text. */
 @font-face {
     font-family: 'kool_beansregular';
     src: url('koolbean.woff2') format('woff2'),
@@ -12,15 +15,17 @@ a {
 
 }
 
+/* Given a flex display to allow the two boxes to sit side by side. */
 body {
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: row;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: -1px;
 }
 
+/* Container for the entire right  side of the page */
 #rightSideContainer {
     display: flex;
     flex-direction: column;
@@ -28,15 +33,17 @@ body {
     width: 60%;
     height: 100vh;
     font-size: 36px;
+    margin-left:
 }
 
+/* Container for the entire left side of the page. */
 #leftSideContainer{
     display: relative;
     width: 40%;
     height: 100%;
-    
 }
 
+/* Positions our image to fit and cover the entire area its been provided. */
 #backgroundImage {
     position: absolute;
     flex-direction: column;
@@ -46,13 +53,14 @@ body {
     z-index: 0;
 }
 
+/* Styling for the logo */
 #logo {
     position: absolute;
     height: 200px;
     left: 25%;
-    opacity: 1;
 }
 
+/* styling for the logo */
 .logoText {
     position: absolute;
     right: 6%;
@@ -63,26 +71,27 @@ body {
     font-weight: bold;
 }
 
+/* Respect given to the photographer */
 .imageText {
     position: absolute;
     align-self: flex-end;
     padding-bottom: 15px;
-    left: 15%;
+    left: 25px;
     color: white;
 }
 
+/* The background that sits over the image, behind the logo. Absolute positioning allows us to put it over.*/
 .transparentBackground {
     position: absolute;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.6); /* 4th option is alpha, lowered  makes the item more transparent. */
     width: 40%;
     height: 200px;
-    top: 290px;
+    top: 110px;
     align-self: center;
-    /* box-shadow: 5px -10px 21px 0px #FFFFFF, 
-    -10px 10px 21px -1px #FFFFFF; */
     z-index: 1;
 }
 
+/* Styling  for our blurb about thing. */
 #blurb {
     font-weight: bold;
     width: 75%;
@@ -91,28 +100,97 @@ body {
     margin-top:  100px;
 }
 
+/* Gives us a box to put our table in  to neatly seperate our form from the blurbs */
 #tableContainer {
     margin-top: 50px;
-    background-color: red;
-    height: 35%;
+    /* background-color: red; */
+    height: auto;
     box-shadow: 0px 2px 8px black;
 }
 
+/* Allows us to set specific layouts for our table spacings between data. */
 table {
     margin-top: 20px;
     margin-left: 50px;
+    margin-bottom: 40px;
 }
 
+/* Simple table heading styling */
 th {
-    background-color: white;
+    font-style: inherit;
+    /* background-color: white; */
     text-align: left;
-    box-shadow: 5px 2px 25px 1px black;
 }
 
+/*  Sets a container for our items inside each row to be allowed to sit next to each other. */
+tr {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Styling for the data in the table */
 td {
+    color: rgba(36, 35, 35, 0.877);
+    font-size: 12px;
+    font-weight: bolder;
+    letter-spacing: 2px;
     padding-top: 20px;
     text-align:  left;
-    box-shadow: 1px 1px 1px 5px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    /* box-shadow: 1px 1px 1px 5px rgb(0, 0, 0); */
+}
+
+label {
+    margin-bottom: 2px;
+}
+/* Allows us to place the input boxes underneath the label by giving us a container for this table data. */
+.columnOne {
+    display: flex;
+    flex-direction: column;
+}
+/* Allows us to place the input boxes underneath the label by giving us a container for this table data. */
+.columnTwo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+ /* Styles the input boxes  */
+input {
+    font-style: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 10px;
+    border-radius: 5px;
+    height: 30px;
+    width: 275px;
+    border-color: rgba(190, 190, 190, 0.137);
+}
+
+input:focus {
+    outline: 1px solid #258E91;
+}
+
+button {
+    background-color: #258E91;
+    border-radius: 8px;
+    /* border: none; this makes it look cleaner but need to animate the button click */
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 15rem;
+    height: 3rem;
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+#loginText {
+    margin-top: 35px;
+    margin-left: 46px;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    word-spacing: 0.2px;
 }
 
 
